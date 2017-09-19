@@ -1,18 +1,22 @@
-var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola',];
-	maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
-	allNames = femaleNames.concat(maleNames);
+var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
+var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+var allNames = femaleNames.concat(maleNames);
 
 console.log(allNames);
 
-var newName= 'Marian';
-function checkName() {
-	if(allNames.indexOf(newName) === -1.) {
-			console.log('Marian nie występuje na tablicy');
-		} else {
-			console.log('Marian występuje na tablicy');
-		}
-}
+var newName = 'Piotrek';
 
-allNames.push(newName);
-console.log(allNames[8]);
-checkName(allNames);
+function checkName(newName) {
+	if (allNames.indexOf(newName) === -1) {
+			allNames.push(newName);
+			console.log('Imię nie występuje na tablicy');
+		} else {
+			console.log('Imię występuje już na tablicy');
+	}
+};
+
+checkName(newName);
+console.log(allNames);
+
+
+
