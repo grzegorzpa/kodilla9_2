@@ -8,10 +8,10 @@ var newName = 'Piotrek';
 
 function checkName(newName) {
 	if (allNames.indexOf(newName) === -1) {
-			allNames.push(newName);
-			console.log('Imię nie występuje na tablicy');
-		} else {
-			console.log('Imię występuje już na tablicy');
+		allNames.push(newName);
+		console.log('Imię nie występuje na tablicy');
+	} else {
+		console.log('Imię występuje już na tablicy');
 	}
 };
 
